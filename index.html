@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <button class="menu-btn" onclick="toggleDrawer()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <h1>Inspiring Quotes</h1>
+        <div style="width: 24px;"></div>
+    </div>
+
+    <div class="drawer" id="drawer">
+        <div class="drawer-header">
+            <i class="fas fa-quote-right" style="font-size: 2rem;"></i>
+            <h2>Quotes App</h2>
+        </div>
+        <a href="#" class="drawer-item" onclick="showHome()">
+            <i class="fas fa-home"></i>
+            Home
+        </a>
+        <a href="#" class="drawer-item" onclick="showFavorites(1)">
+            <i class="fas fa-heart favorite1-color"></i>
+            Favorites 1
+        </a>
+        <a href="#" class="drawer-item" onclick="showFavorites(2)">
+            <i class="fas fa-heart favorite2-color"></i>
+            Favorites 2
+        </a>
+        <a href="#" class="drawer-item" onclick="showFavorites(3)">
+            <i class="fas fa-heart favorite3-color"></i>
+            Favorites 3
+        </a>
+    </div>
+
+    <div class="overlay" onclick="toggleDrawer()"></div>
+    <div class="main-content" id="main-content"></div>
+    <div class="footer">Developed by: Shiva Prasad Acharya</div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
